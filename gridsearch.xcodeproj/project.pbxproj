@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2AA8E325FA739300AD7A65 /* view.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2AA8E225FA739300AD7A65 /* view.swift */; };
 		FE63047725ECFD2C0037FF80 /* gridsearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63047625ECFD2C0037FF80 /* gridsearchApp.swift */; };
 		FE63047925ECFD2C0037FF80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63047825ECFD2C0037FF80 /* ContentView.swift */; };
 		FE63047B25ECFD340037FF80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE63047A25ECFD340037FF80 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE2AA8E225FA739300AD7A65 /* view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view.swift; sourceTree = "<group>"; };
 		FE63047325ECFD2C0037FF80 /* gridsearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gridsearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE63047625ECFD2C0037FF80 /* gridsearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridsearchApp.swift; sourceTree = "<group>"; };
 		FE63047825ECFD2C0037FF80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,13 +62,14 @@
 		FE63047525ECFD2C0037FF80 /* gridsearch */ = {
 			isa = PBXGroup;
 			children = (
+				FEC97E1625F66414002D927D /* model.swift */,
+				FEC97E1325F663A1002D927D /* viewmodel.swift */,
+				FE2AA8E225FA739300AD7A65 /* view.swift */,
 				FE63047625ECFD2C0037FF80 /* gridsearchApp.swift */,
 				FE63047825ECFD2C0037FF80 /* ContentView.swift */,
 				FE63047A25ECFD340037FF80 /* Assets.xcassets */,
 				FE63047F25ECFD340037FF80 /* Info.plist */,
 				FE63047C25ECFD340037FF80 /* Preview Content */,
-				FEC97E1325F663A1002D927D /* viewmodel.swift */,
-				FEC97E1625F66414002D927D /* model.swift */,
 			);
 			path = gridsearch;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				FE63047925ECFD2C0037FF80 /* ContentView.swift in Sources */,
 				FE63047725ECFD2C0037FF80 /* gridsearchApp.swift in Sources */,
+				FE2AA8E325FA739300AD7A65 /* view.swift in Sources */,
 				FEC97E1425F663A1002D927D /* viewmodel.swift in Sources */,
 				FEC97E1725F66414002D927D /* model.swift in Sources */,
 			);
