@@ -24,12 +24,13 @@ struct searchView: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 20) {
+
                     SearchBar(searchText: $searchText, isSearching: $isSearching)
                     
                     VStack(spacing: 20) {
                         LazyVGrid (columns: gridItem,
                                    content: {
-                                    ForEach((vm.results).filter({ "\($0)".contains(searchText) || searchText.isEmpty}), id: \.self) { app in
+                                    ForEach((vm.results).filter({ "\($0.name)".contains(searchText) || searchText.isEmpty}), id: \.self) { app in
                                         
                                         VStack(alignment: .leading) {
                                             
@@ -42,7 +43,7 @@ struct searchView: View {
                                                 .font(.system(size: 10,weight:.semibold))
                                             Text(app.releaseDate)
                                                 .font(.system(size:12 ,weight: .regular))
-                                            Text(app.copyright)
+                                            Text(app.artistName)
                                                 .font(.system(size:12 ,weight: .regular))
                                                 .lineLimit(3)
                                             

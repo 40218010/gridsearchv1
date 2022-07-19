@@ -16,5 +16,5 @@ struct Feed: Decodable {
 }
 
 struct Result: Decodable, Hashable {
-    let copyright, name, artworkUrl100, releaseDate: String
+    let artistName, name, artworkUrl100, releaseDate: String
 }
