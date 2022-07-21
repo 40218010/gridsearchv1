@@ -41,7 +41,7 @@ struct searchView: View {
                                             
                                             Text(app.name)
                                                 .font(.system(size: 10,weight:.semibold))
-                                            Text(app.releaseDate)
+                                            Text(app.releaseDate ?? "")
                                                 .font(.system(size:12 ,weight: .regular))
                                             Text(app.artistName)
                                                 .font(.system(size:12 ,weight: .regular))

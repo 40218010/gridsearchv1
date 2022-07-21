@@ -20,7 +20,7 @@ class GridViewModel: ObservableObject {
          } */
         
         guard let url = URL(string:
-                                "https://rss.applemarketingtools.com/api/v2/gb/apps/top-free/50/apps.json") else { return }
+                                "https://rss.applemarketingtools.com/api/v2/gb/music/most-played/50/songs.json") else { return }
         URLSession.shared.dataTask(with: url) { (data,resp,err) in
             //check resp status and err
             guard let data = data else { return }
